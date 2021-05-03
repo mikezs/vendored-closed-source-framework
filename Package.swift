@@ -12,7 +12,7 @@ let package = Package(
             name: "ClosedSourceFramework",
             targets: ["VendoredClosedSourceFramework"])
     ],
-    dependencies: [
+    dependencies:[ 
         .package(
             name: "Alamofire",
             url: "https://github.com/Alamofire/Alamofire.git",
