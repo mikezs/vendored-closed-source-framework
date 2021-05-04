@@ -17,19 +17,25 @@ let package = Package(
             name: "Alamofire",
             url: "https://github.com/Alamofire/Alamofire.git",
             .upToNextMajor(from: "5.4.3")
-        )
+        ),
+        .package(
+            name: "TwilioVoice",
+            url: "https://github.com/gersonnoboa/twilio-voice-ios.git",
+            .upToNextMajor(from: "1.0.0")
+        ),
     ],
     targets: [
         .binaryTarget(
             name: "ClosedSourceFramework",
-            url: "https://github.com/gersonnoboa/vendored-closed-source-framework/releases/download/1.0.0/ClosedSourceFramework.xcframework.zip",
-            checksum: "c4579ca971b734b607ac92b2130ac51a744cf7e39be61c94d67252050019b377"
+            url: "https://github.com/gersonnoboa/vendored-closed-source-framework/releases/download/1.0.1/ClosedSourceFramework.xcframework.zip",
+            checksum: "b5c23a07cc9b2c4dcc306581ef63eb94fb52e1b032634bdbe00fdea46117d18f"
         ),
         .target(
             name: "VendoredClosedSourceFramework",
             dependencies: [
                 "ClosedSourceFramework",
-                "Alamofire"
+                "Alamofire",
+                "TwilioVoice"
             ]
         )
     ]
