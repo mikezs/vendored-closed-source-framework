@@ -27,7 +27,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ClosedSourceFramework",
-            url: "https://github.com/gersonnoboa/vendored-closed-source-framework/releases/download/1.0.1/ClosedSourceFramework.xcframework.zip",
+            url: "https://github.com/gersonnoboa/vendored-closed-source-framework/releases/download/1.0.2/ClosedSourceFramework.xcframework.zip",
             checksum: "b5c23a07cc9b2c4dcc306581ef63eb94fb52e1b032634bdbe00fdea46117d18f"
         ),
         .target(
